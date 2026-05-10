@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Center Theme",
+  "version": "1.0",
+  "description": "Centers ChatGPT messages and adds User/ChatGPT labels with colors.",
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
